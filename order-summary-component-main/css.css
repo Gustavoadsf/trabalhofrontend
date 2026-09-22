@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+}
+.toposite {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.centro {
+    width: 350px;
+    height: 550px;
+    border-radius: 25px;
+    background-color:  white;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.3);
+}
+.meio {
+    margin-bottom: 30px;
+    display: flex;
+}
+.centro p {
+    text-align: center;
+
+}
+.centro p:nth-of-type(1) {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.centro p:nth-of-type(2) {
+    color: hsl(224, 23%, 55%);
+}
+.meio p:nth-of-type(1) {
+    font-weight: bolder;
+    width: 400px;
+    height: auto;
+    font-size: 15px;
+}
+.preco {
+    color: hsl(224, 23%, 55%);
+    font-weight: normal;
+}
+#topo {
+    width: 350px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#musica {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 15px;
+    width: auto;
+    height: 40px;
+}
+.centro button{
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bolder;
+    width: 80%;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: transform 0.3s ease-in-out; 
+}
+.centro button.cancelar {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: hsl(224, 23%, 55%);
+    font-weight: bolder;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: transform 0.3s ease-in-out; 
+}
+.meio button.change {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: hsl(245, 75%, 52%);
+    font-weight: bolder;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    text-decoration: underline;
+    transition: transform 0.3s ease-in-out; 
+}
+.cancelar:hover {
+  transform: scale(1.1); 
+}
+.change:hover {
+  transform: scale(1.1); 
+}
+.assinar:hover {
+  transform: scale(1.1); 
+}
