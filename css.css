@@ -10,9 +10,9 @@ body {
 .toposite {
     background-image: url('images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: top center;
-    height: 500px;
+    height: 800px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -28,6 +28,13 @@ body {
 .meio {
     margin-bottom: 30px;
     display: flex;
+    margin: 25px 24px;
+    padding: 15px 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;                  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .centro p {
     text-align: center;
@@ -37,6 +44,7 @@ body {
 .centro p:nth-of-type(1) {
   font-weight: bolder;
   font-size: 25px;
+  font-family: "Red Hat Display", sans-serif;
 }
 .centro p:nth-of-type(2) {
     color: hsl(224, 23%, 55%);
@@ -47,10 +55,13 @@ body {
     width: 400px;
     height: auto;
     font-size: 15px;
+    font-family: "Red Hat Display", sans-serif;
+    white-space: nowrap;
 }
 .preco {
     color: hsl(224, 23%, 55%);
     font-weight: normal;
+    font-family: "Red Hat Display", sans-serif;
 }
 #topo {
     width: 350px;
@@ -60,7 +71,6 @@ body {
 #musica {
     padding-left: 20px;
     padding-right: 10px;
-    padding-top: 15px;
     width: auto;
     height: 40px;
 }
@@ -68,13 +78,15 @@ body {
     border: none;
     background-color: hsl(245, 75%, 52%);
     color: white;
+    box-shadow: 100px;
     font-weight: bolder;
     width: 80%;
     padding: 15px 30px;
     border-radius: 10px;
     cursor: pointer;
     margin-left: 30px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
+    font-family: "Red Hat Display", sans-serif;
 }
 .centro button.cancelar {
     border: none;
@@ -85,7 +97,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     margin-left: 30px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
+    font-family: "Red Hat Display", sans-serif;
 }
 .meio button.change {
     border: none;
@@ -98,13 +111,38 @@ body {
     margin-left: 30px;
     text-decoration: underline;
     transition: transform 0.3s ease-in-out; 
+    font-family: "Red Hat Display", sans-serif;
 }
 .cancelar:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 .change:hover {
   transform: scale(1.1); 
 }
 .assinar:hover {
   transform: scale(1.1); 
+}
+@media (max-width: 480px) {
+    .toposite {
+        background-image: url('images/pattern-background-mobile.svg');
+        height: 40vh;
+    }
+    .centro {
+        width: 90%;
+    }
+    .centro p:nth-of-type(1) {
+        font-size: 20px;
+    }
+    .centro p:nth-of-type(2) {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .meio {
+        margin: 20px 16px;
+        padding: 12px;
+    }
+    .centro button.assinar {
+    width: 100%;
+    margin: 0 16px;
+    }
 }
